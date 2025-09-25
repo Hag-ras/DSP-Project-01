@@ -5,7 +5,4 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/DSP-Project-01",
-  build: {
-    outDir: "dist",
-  },
 });
