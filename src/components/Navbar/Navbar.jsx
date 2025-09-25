@@ -4,7 +4,7 @@ import "./navbar.css";
 export default function Navbar() {
   const location = useLocation();
 
-  let options;
+  let options = [];
 
   if (location.pathname === "/medical") {
     options = ["ECG", "EEG"];
