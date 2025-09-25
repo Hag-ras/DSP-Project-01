@@ -1,12 +1,23 @@
+import { useLocation } from "react-router-dom";
 import "./navbar.css";
+
 export default function Navbar() {
+  const location = useLocation();
+
+  let options;
+
+  if (location.pathname === "/medical") {
+    options = ["ECG", "EEG"];
+  } else if (location.pathname === "/sound") {
+    options = ["Radar", "Doppler"];
+  }
+
   return (
     <nav>
-      <Select data={["ECG", "EEG"]} />
+      <Select name="mode" data={options} />
 
       <div>
         <Select name="lead" />
-
         <Select />
       </div>
     </nav>

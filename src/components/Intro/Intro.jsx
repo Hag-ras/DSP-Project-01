@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 import "./Intro.css";
 
 export default function Intro() {
@@ -15,12 +15,8 @@ export default function Intro() {
         </button>
         <h1>Which Mode do you want?</h1>
         <div className="modal-buttons">
-          <Button bgColor="#1e6091">
-            Medical
-          </Button>
-          <Button bgColor="#5ca8d8">
-            Sound
-          </Button>
+          <Button bgColor="#1e6091" to={'/medical'}>Medical</Button>
+          <Button bgColor="#5ca8d8" to={'/sound'}>Sound</Button>
         </div>
       </div>
     </div>
