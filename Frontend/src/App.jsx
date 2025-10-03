@@ -1,20 +1,16 @@
-import { Route, Routes, useLocation } from "react-router";
+import { Route, Routes } from "react-router";
 import Intro from "./components/Intro/Intro";
-import Navbar from "./components/Navbar/Navbar";
-import Page from "./components/Page/Page";
+// import Navbar from "./components/Navbar/Navbar";
+// import Page from "./components/Page/Page";
 
 export default function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
-  const showNavbar = location.pathname !== "/";
+  // const showNavbar = location.pathname !== "/";
   return (
     <>
-      {showNavbar && <Navbar />}
-      <Routes>
-        <Route path="/" element={<Intro />} />
-        <Route path="/medical" element={<Page>ECG|EEG</Page>} />
-        <Route path="/sound" element={<Page>Sound Graph</Page>} />
-      </Routes>
+      {/* {showNavbar && <Navbar />} */}
+      <Intro />
     </>
   );
 }

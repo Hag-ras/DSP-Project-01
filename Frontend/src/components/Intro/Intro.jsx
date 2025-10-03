@@ -15,8 +15,21 @@ export default function Intro() {
         </button>
         <h1>Which Mode do you want?</h1>
         <div className="modal-buttons">
-          <Button bgColor="#1e6091" to={'/medical'}>Medical</Button>
-          <Button bgColor="#5ca8d8" to={'/sound'}>Sound</Button>
+          <Button bgColor="#1e6091" to="http://127.0.0.1:8052/">
+            Medical
+          </Button>
+          {/* <Button bgColor="#5ca8d8" to={"/ecg"}>
+            ECG
+          </Button> */}
+          <Button bgColor="#28a745" to="http://127.0.0.1:8050/">
+            Doppler
+          </Button>
+          <Button bgColor="#ff6b6b" to={"/sar"}>
+            SAR
+          </Button>
+          <Button bgColor="#9d4edd" to="http://127.0.0.1:8051/">
+            Sound
+          </Button>
         </div>
       </div>
     </div>
